@@ -164,6 +164,12 @@ const Index = ({ skills, experiences, studies, projects }) => (
     </section>
   </Layout>
 );
+useEffect(() => {
+  window.scrollTo({
+    top: 100,
+    behavior: "auto",
+  });
+}, [third]);
 
 export default Index;
 
